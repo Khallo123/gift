@@ -1,0 +1,77 @@
+
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffe6e6, #ffcccb);
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.header {
+  padding: 20px;
+  background-color: #ff99a6;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.message {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #ff3366;
+}
+
+.gift-button {
+  margin: 20px 0;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #ff6699;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.wish-section,
+.questions-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffe6e6;
+  border-radius: 10px;
+}
+
+textarea,
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #ff99a6;
+  color: #fff;
+}
