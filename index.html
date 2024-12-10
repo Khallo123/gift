@@ -5,48 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Year Gift</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <h1>Happy New Year, My Love</h1>
-    </header>
-    <main class="main">
-      <div class="message">
-        <p>You make my every year brighter. Here's to a magical 2025! ❤️</p>
-      </div>
-      <button class="gift-button" onclick="revealGift()">Click Me</button>
-      <div id="gift-message" class="hidden">
-        <h3>You are my forever and always. 💖</h3>
-      </div>
-      <section class="wish-section">
-        <h2>Your Wish for the Year</h2>
-        <textarea id="wish" placeholder="Write your wish here..."></textarea>
-        <button class="submit-wish" onclick="saveWish()">Save Wish</button>
-        <div id="saved-wish" class="hidden">
-          <p><strong>Your Wish:</strong> <span id="wish-text"></span></p>
-        </div>
-      </section>
-      <section class="questions-section">
-        <h2>Fun Questions for You</h2>
-        <form id="questions-form">
-          <p>1. What’s your dream destination for us?</p>
-          <input type="text" id="destination" placeholder="Your answer..." required>
-          <p>2. What’s your favorite memory with me?</p>
-          <input type="text" id="memory" placeholder="Your answer..." required>
-          <button type="button" class="submit-questions" onclick="saveAnswers()">Submit Answers</button>
-        </form>
-        <div id="answers-section" class="hidden">
-          <h3>Your Answers:</h3>
-          <p><strong>Dream Destination:</strong> <span id="answer-destination"></span></p>
-          <p><strong>Favorite Memory:</strong> <span id="answer-memory"></span></p>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <p>Forever Yours, [Your Name]</p>
-    </footer>
+  <div class="hero">
+    <h1>Happy New Year, My Love 🎉</h1>
+    <p>You make every year brighter and more beautiful. Here's a special surprise for you!</p>
+    <button class="reveal-gift" onclick="revealGift()">Open Your Gift 🎁</button>
   </div>
+  
+  <section class="gift hidden">
+    <h2>🎁 Your Gift</h2>
+    <p>As the clock strikes midnight, my heart is filled with gratitude for having you in my life. You are my greatest gift, my source of joy, and my reason to smile every day.
+
+        This year has been amazing because of you, and I can’t wait to create more unforgettable memories together in the year ahead. Here’s to endless laughter, unwavering love, and dreams we’ll chase hand in hand.
+        
+        You are my everything, and I love you more than words can express.
+        
+        Cheers to a beautiful new chapter for us! ❤️🎉</p>
+  </section>
+  
+  <section class="gallery">
+    <h2>Our Precious Moments</h2>
+    <div class="carousel">
+      <img src="images/photo1.jpg" alt="Moment 1">
+      <img src="images/photo2.jpg" alt="Moment 2">
+      <img src="images/photo3.jpg" alt="Moment 3">
+    </div>
+  </section>
+  
+  <section class="wish">
+    <h2>Your Wish for the Year</h2>
+    <textarea id="wish-box" placeholder="Write your wish here..."></textarea>
+    <button onclick="saveWish()">Submit Wish</button>
+    <div class="wish-display hidden">
+      <p>Your wish: <span id="wish-text"></span></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Forever yours, <strong>[Your Name]</strong></p>
+    <div class="countdown">
+      <h2>Countdown to 2025</h2>
+      <p id="countdown-timer"></p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
