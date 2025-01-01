@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/favicon/favicon-32x32.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right_alt" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Happy NEW YEAR</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- First page -->
+        <div class="first-page">
+            <img src="Assets/Images/ballon.png" class="ballon-img">
+            <div class="main-text font-extrabold">HAPPY</div>
+            <div class=" sec-text font-extrabold">NEW YEAR</div>
+            <img src="Assets/Images/cake.svg" class="cake-img">
+            <div class="small-text font-bold">Tap to continue</div>
+        </div>
+
+        <!-- Second page -->
+        <div class="second-page">
+            <div class="card">
+                <div class="outside">
+                    <div class="front">
+                        <div class="card-title font-bold">To my Queen !</div>
+                        <div class="card-small-text">Tap to open the card</div>
+                    </div>
+                    <div class="back"></div>
+                </div>
+                <div class="inside">
+                    <div class="card-text">
+                        Happy New Year, My Love!
+                        As the clock strikes midnight, my heart is filled with gratitude for having you in my life. You are my greatest gift, my source of joy, and my reason to smile every day.
+                        This year has been amazing because of you, and I can’t wait to create more unforgettable memories together in the year ahead. Here’s to endless laughter, unwavering love, and dreams we’ll chase hand in hand.
+                        You are my everything, and I love you more than words can express.
+                        Cheers to a beautiful new chapter for us! ❤️🎉
+                    </div>
+                    <div class="card-small-text">Time to blow out some candles</div>
+                    <div class="btn font-bold">To the candles <span
+                            class="material-symbols-outlined">arrow_right_alt</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third page -->
+        <div class="third-page">
+            <div class="candle-small-text fade-in-out-animation">Tap the candle to blow it out</div>
+            <div class="candle-container">
+                <div class="candles">
+                    <div class="candle">
+                        <div class="candle-flame"></div>
+                        <div class="thread"></div>
+                        <div class="main-part"></div>
+                    </div>
+                    <div class="candle">
+                        <div class="candle-flame"></div>
+                        <div class="thread"></div>
+                        <div class="main-part"></div>
+                    </div>
+                    <div class="candle">
+                        <div class="candle-flame"></div>
+                        <div class="thread"></div>
+                        <div class="main-part"></div>
+                    </div>
+                </div>
+                <div class="candles-base"></div>
+            </div>
+        </div>
+
+        <!-- Fourth page -->
+        <div class="fourth-page visible">
+            <div class="wish-small-text">Time to make your wish 😁</div>
+            <textarea name="wish" id="wish" rows="8" placeholder="Type your wish here ..."></textarea>
+            <div class="err-msg">You must wish some thing sis 🥲</div>
+            <div class="btn font-bold py-2">wish</div>
+        </div>
+
+        <!-- Fifth page -->
+        <div class="fifth-page">
+            <div class="age-small-text">Your age now is</div>
+            <div class="age">
+                <div class="first-number">1</div>
+                <div class="second-number number-change-animation">
+                    <div class="from-number">7</div>
+                    <div class="to-number">8</div>
+                </div>
+            </div>
+            <div class="age-small-comment">You are an adult now 😂</div>
+        </div>
+
+        <!-- Sixth page -->
+        <div class="sixth-page">
+            <div class="message">
+                <div class="message-title font-bold">Dear Love,</div>
+                <div class="message-content">
+                    Happy new year! 🎉 I created this website just for you, as a small way to show how much you mean to
+                    me. I hope you enjoy exploring it as much as I enjoyed making it. Always remember how special you
+                    are, and how much you are loved.
+
+                    Here’s to many more years filled with joy and laughter!
+                    <br><br>
+                    With all my love,
+                    <div class="font-bold">Your beloved man 😊🌹</div>
+                </div>
+            </div>
+            <div class="message-small-text">This is the end of the website</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "usoydEwUq-jBIxhZ4",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

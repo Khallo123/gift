@@ -1,0 +1,7 @@
+@media (min-width: 992px) {
+    .container {
+        /* height: fit-content; */
+        width: 20%;
+        margin: 0 auto;
+    }
+}
